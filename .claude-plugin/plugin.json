@@ -1,0 +1,11 @@
+{
+  "name": "claude-tmux-status",
+  "description": "Show Claude Code session state as Nerd Font icons in your tmux window name",
+  "version": "1.0.0",
+  "author": {
+    "name": "Zaid Al-Saheb"
+  },
+  "repository": "https://github.com/zaidalsaheb/claude-tmux-status",
+  "license": "MIT",
+  "keywords": ["tmux", "status", "nerd-font", "window-rename"]
+}
