@@ -3,7 +3,7 @@
   "description": "Show Claude Code session state as Nerd Font icons in your tmux window name",
   "version": "1.0.0",
   "author": {
-    "name": "Zaid Al-Saheb"
+    "name": "Zaid Alsaheb"
   },
   "repository": "https://github.com/zaidalsaheb/claude-tmux-status",
   "license": "MIT",
