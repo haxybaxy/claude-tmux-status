@@ -79,11 +79,29 @@
     ],
     "Notification": [
       {
-        "matcher": "",
+        "matcher": "permission_prompt",
         "hooks": [
           {
             "type": "command",
             "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [👋]"
+          }
+        ]
+      },
+      {
+        "matcher": "elicitation_dialog",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [👋]"
+          }
+        ]
+      },
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [💤]"
           }
         ]
       }
