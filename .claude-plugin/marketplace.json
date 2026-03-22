@@ -1,12 +1,12 @@
 {
-  "name": "claude-tmux-status-dev",
+  "name": "tmux-status-dev",
   "owner": {
     "name": "Zaid Alsaheb",
     "email": "him@zaidalsaheb.com"
   },
   "plugins": [
     {
-      "name": "claude-tmux-status",
+      "name": "tmux-status",
       "source": "./",
       "description": "Appends an icon next to your tmux window name to show you what claude code is doing"
     }

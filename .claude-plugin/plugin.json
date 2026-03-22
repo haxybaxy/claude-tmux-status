@@ -1,7 +1,7 @@
 {
-  "name": "claude-tmux-status",
-  "description": "Show Claude Code session state as Nerd Font icons in your tmux window name",
-  "version": "1.0.0",
+  "name": "tmux-status",
+  "description": "Show Claude Code session state as an emoji in your tmux window name",
+  "version": "1.1.0",
   "author": {
     "name": "Zaid Alsaheb"
   },

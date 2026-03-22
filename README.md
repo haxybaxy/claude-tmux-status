@@ -27,7 +27,7 @@ From inside Claude Code, run:
 Then install the plugin:
 
 ```
-/plugin install claude-tmux-status
+/plugin install tmux-status
 ```
 
 Finally, activate it:
@@ -51,16 +51,16 @@ Claude Code picks up the plugin automatically on next launch.
 
 The plugin registers [hooks](https://docs.anthropic.com/en/docs/claude-code/hooks) for Claude Code lifecycle events. Each event runs a small bash script that appends or removes an icon suffix on the current tmux window name.
 
-| Event | Icon | State |
-|-------|------|-------|
-| `SessionStart` | `😴` | Idle |
-| `UserPromptSubmit` | `🧑‍🍳` | Processing |
-| `PreToolUse` | `🧑‍🍳` | Processing |
-| `PostToolUse` | `🧑‍🍳` | Processing |
-| `Stop` | `😴` | Idle |
-| `PermissionRequest` | `👀` | Needs attention |
-| `Notification` | `👀` | Needs attention |
-| `SessionEnd` | *(removed)* | Cleans up and re-enables `automatic-rename` |
+| Event               | Icon        | State                                       |
+| ------------------- | ----------- | ------------------------------------------- |
+| `SessionStart`      | `😴`        | Idle                                        |
+| `UserPromptSubmit`  | `🧑‍🍳`        | Processing                                  |
+| `PreToolUse`        | `🧑‍🍳`        | Processing                                  |
+| `PostToolUse`       | `🧑‍🍳`        | Processing                                  |
+| `Stop`              | `😴`        | Idle                                        |
+| `PermissionRequest` | `👀`        | Needs attention                             |
+| `Notification`      | `👀`        | Needs attention                             |
+| `SessionEnd`        | _(removed)_ | Cleans up and re-enables `automatic-rename` |
 
 ## Customization
 
