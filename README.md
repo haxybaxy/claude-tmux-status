@@ -16,14 +16,36 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin that show
 
 ## Install
 
+### Via Claude Code Plugin Marketplace (recommended)
+
+From inside Claude Code, run:
+
+```
+/plugin marketplace add https://github.com/haxybaxy/claude-tmux-status.git
+```
+
+Then install the plugin:
+
+```
+/plugin install claude-tmux-status
+```
+
+Finally, activate it:
+
+```
+/reload-plugins
+```
+
+### Manual
+
 Clone into your Claude Code plugins directory:
 
 ```bash
-git clone https://github.com/zaidalsaheb/claude-tmux-status \
+git clone https://github.com/haxybaxy/claude-tmux-status \
   ~/.claude/plugins/claude-tmux-status
 ```
 
-That's it — Claude Code picks up the plugin automatically on next launch.
+Claude Code picks up the plugin automatically on next launch.
 
 ## How it works
 
