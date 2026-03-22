@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [😴]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh idle"
           }
         ]
       }
@@ -17,7 +17,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [🧑‍🍳]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh processing"
           }
         ]
       }
@@ -28,7 +28,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [🧑‍🍳]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh processing"
           }
         ]
       }
@@ -39,7 +39,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [🧑‍🍳]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh processing"
           }
         ]
       }
@@ -50,7 +50,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [😴]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh idle"
           }
         ]
       }
@@ -72,7 +72,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [👀]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh attention"
           }
         ]
       }
@@ -83,7 +83,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [🧑‍🍳]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh processing"
           }
         ]
       }
@@ -94,7 +94,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [👀]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh attention"
           }
         ]
       },
@@ -103,7 +103,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [👀]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh attention"
           }
         ]
       },
@@ -112,7 +112,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh [😴]"
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/tmux-rename.sh idle"
           }
         ]
       }

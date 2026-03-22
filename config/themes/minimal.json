@@ -1,0 +1,9 @@
+{
+  "name": "minimal",
+  "description": "Plain text indicators",
+  "icons": {
+    "idle": "zzz",
+    "processing": "...",
+    "attention": "(!)"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "nerd-font",
+  "description": "Nerd Font icons (requires a patched font)",
+  "icons": {
+    "idle": "󰒲",
+    "processing": "󰑮",
+    "attention": "󰂞"
+  }
+}

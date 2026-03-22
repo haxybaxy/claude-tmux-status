@@ -64,7 +64,50 @@ The plugin registers [hooks](https://docs.anthropic.com/en/docs/claude-code/hook
 
 ## Customization
 
-Edit `hooks/hooks.json` to swap icons to any emoji you prefer.
+### Switch icon themes
+
+Use the built-in skill from inside Claude Code:
+
+```
+/tmux-icons              # list available themes
+/tmux-icons emoji        # switch to emoji (default)
+/tmux-icons nerd-font    # switch to Nerd Font icons
+/tmux-icons minimal      # switch to plain text indicators
+```
+
+Changes take effect immediately on the next lifecycle event — no restart needed.
+
+### Override a single icon
+
+```
+/tmux-icons set attention !!
+```
+
+### Create a custom theme
+
+```
+/tmux-icons create my-theme
+```
+
+### Bundled themes
+
+| Theme       | Idle | Processing | Attention | Notes                      |
+| ----------- | ---- | ---------- | --------- | -------------------------- |
+| `emoji`     | 😴   | 🧑‍🍳         | 👀        | Default, works everywhere  |
+| `nerd-font` | 󰒲    | 󰑮          | 󰂞         | Requires a patched font    |
+| `minimal`   | zzz  | ...        | (!)       | Plain text, no font needed |
+
+### Manual config
+
+The active icon set is stored in `config/active.conf` as simple key=value pairs:
+
+```
+idle=😴
+processing=🧑‍🍳
+attention=👀
+```
+
+Theme presets live in `config/themes/*.json`.
 
 ## License
 
