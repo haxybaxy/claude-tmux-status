@@ -1,7 +1,8 @@
 {
   "name": "claude-tmux-status-dev",
   "owner": {
-    "name": "Zaid Alsaheb"
+    "name": "Zaid Alsaheb",
+    "email": "him@zaidalsaheb.com"
   },
   "plugins": [
     {

@@ -5,7 +5,7 @@
   "author": {
     "name": "Zaid Alsaheb"
   },
-  "repository": "https://github.com/zaidalsaheb/claude-tmux-status",
+  "repository": "https://github.com/haxybaxy/claude-tmux-status",
   "license": "MIT",
   "keywords": ["tmux", "status", "emoji", "nerd-font", "window-rename"]
 }
