@@ -7,5 +7,5 @@
   },
   "repository": "https://github.com/zaidalsaheb/claude-tmux-status",
   "license": "MIT",
-  "keywords": ["tmux", "status", "nerd-font", "window-rename"]
+  "keywords": ["tmux", "status", "emoji", "nerd-font", "window-rename"]
 }

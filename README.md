@@ -4,9 +4,9 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin that show
 
 ```
  zsh              — no session
- zsh [💤]          — idle
- zsh [🧠]          — thinking / tool use
- zsh [👋]          — needs attention (permission request / notification)
+ zsh [😴]          — idle
+ zsh [🧑‍🍳]          — thinking / tool use
+ zsh [👀]          — needs attention (permission request / notification)
 ```
 
 ## Requirements
@@ -31,13 +31,13 @@ The plugin registers [hooks](https://docs.anthropic.com/en/docs/claude-code/hook
 
 | Event | Icon | State |
 |-------|------|-------|
-| `SessionStart` | `💤` | Idle |
-| `UserPromptSubmit` | `🧠` | Processing |
-| `PreToolUse` | `🧠` | Processing |
-| `PostToolUse` | `🧠` | Processing |
-| `Stop` | `💤` | Idle |
-| `PermissionRequest` | `👋` | Needs attention |
-| `Notification` | `👋` | Needs attention |
+| `SessionStart` | `😴` | Idle |
+| `UserPromptSubmit` | `🧑‍🍳` | Processing |
+| `PreToolUse` | `🧑‍🍳` | Processing |
+| `PostToolUse` | `🧑‍🍳` | Processing |
+| `Stop` | `😴` | Idle |
+| `PermissionRequest` | `👀` | Needs attention |
+| `Notification` | `👀` | Needs attention |
 | `SessionEnd` | *(removed)* | Cleans up and re-enables `automatic-rename` |
 
 ## Customization
