@@ -1,4 +1,5 @@
 # claude-tmux-status
+<img width="620" height="57" alt="image" src="https://github.com/user-attachments/assets/883a7881-60a4-41f9-96b5-1ac4e185dffe" />
 
 A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin that shows session state as emoji icons in your tmux window name.
 
