@@ -5,9 +5,9 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin that show
 
 ```
  zsh              — no session
- zsh [😴]          — idle
  zsh [🧑‍🍳]          — thinking / tool use
  zsh [👀]          — needs attention (permission request / notification)
+ zsh [😴]          — idle
 ```
 
 ## Requirements
