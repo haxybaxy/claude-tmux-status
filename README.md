@@ -61,7 +61,7 @@ The plugin registers [hooks](https://docs.anthropic.com/en/docs/claude-code/hook
 | `Stop`              | `😴`        | Idle                                        |
 | `PermissionRequest` | `👀`        | Needs attention                             |
 | `Notification`      | `👀`        | Needs attention                             |
-| `SessionEnd`        | _(removed)_ | Cleans up and re-enables `automatic-rename` |
+| `SessionEnd`        | _(removed)_ | Restores the clean window name              |
 
 ## Customization
 

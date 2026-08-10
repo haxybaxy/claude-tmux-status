@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # tmux-rename.sh — Set/remove an icon suffix on the current tmux window.
 # Usage: tmux-rename.sh <state>   → look up icon for state (idle/processing/attention)
-#        tmux-rename.sh           → strip suffix, re-enable automatic-rename
+#        tmux-rename.sh           → strip suffix, leave automatic-rename untouched
 
 set -euo pipefail
 [[ -z "${TMUX_PANE:-}" ]] && exit 0
@@ -35,5 +35,4 @@ if [[ $# -ge 1 ]]; then
   tmux rename-window -t "$TMUX_PANE" "${CLEAN} [${ICON}]"
 else
   tmux rename-window -t "$TMUX_PANE" "$CLEAN"
-  tmux set-window-option -t "$TMUX_PANE" automatic-rename on
 fi
