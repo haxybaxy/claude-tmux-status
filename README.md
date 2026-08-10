@@ -10,6 +10,12 @@ A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin that show
  zsh [😴]          — idle
 ```
 
+Name your session with `/rename` and the window follows along:
+
+```
+ Fix auth bug [🧑‍🍳]    — window named after the Claude session
+```
+
 ## Requirements
 
 - [tmux](https://github.com/tmux/tmux)
@@ -52,6 +58,8 @@ Claude Code picks up the plugin automatically on next launch.
 
 The plugin registers [hooks](https://docs.anthropic.com/en/docs/claude-code/hooks) for Claude Code lifecycle events. Each event runs a small bash script that appends or removes an icon suffix on the current tmux window name.
 
+There is no background process — the script runs only when a hook fires, and exits.
+
 | Event               | Icon        | State                                       |
 | ------------------- | ----------- | ------------------------------------------- |
 | `SessionStart`      | `😴`        | Idle                                        |
@@ -61,7 +69,15 @@ The plugin registers [hooks](https://docs.anthropic.com/en/docs/claude-code/hook
 | `Stop`              | `😴`        | Idle                                        |
 | `PermissionRequest` | `👀`        | Needs attention                             |
 | `Notification`      | `👀`        | Needs attention                             |
-| `SessionEnd`        | _(removed)_ | Restores the clean window name              |
+| `SessionEnd`        | _(removed)_ | Restores the pre-session window name        |
+
+### Window names
+
+The text before the icon is the **Claude session title** — whatever you set with `/rename` — whenever tmux can see it. Otherwise the window keeps its own name.
+
+When the session ends, the window name it had beforehand is put back.
+
+Your `automatic-rename` setting is never modified, in either direction.
 
 ## Customization
 
@@ -110,6 +126,16 @@ attention=👀
 
 Theme presets live in `config/themes/*.json`.
 
+### Keep your own window names
+
+To ignore the Claude session title and always use the window's own name, add to `.tmux.conf`:
+
+```tmux
+set -g @claude_tmux_status_title off
+```
+
+Set it per-window with `set -w` instead.
+
 ## License
 
-MIT
+[MIT](LICENSE) © Zaid Alsaheb
